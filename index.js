@@ -1,26 +1,16 @@
-function caluculation(num1, num2, op){
-    if(op == "+") {
-        return num1 + num2
-    }
-    else if(op == "-"){
-        return num1 - num2
-    }
-    else if(op == "*"){
-        return num1 * num2
-    }
-    else if(op == "/"){
-        return num1 / num2
-    }
-    else if(op == "%"){
-        return num1 % num2
-    }
-    else{
-        return "Enter valid operation"
-    }
+let person = {
+    name: "Ali",
+    age: 24,
+    getInfo: function (){
+        return "Name of person is: "+ this.name + " and age is: "+ this.age
+    },
+    isLive: true
 }
 
-var sum = caluculation(5, 7, "+");
-var min = caluculation(5, 7, "-");
-var mul = caluculation(5, 7, "*");
-var div = caluculation(5, 7, "/");
-var rem = caluculation(7, 5, "%");
+// person.email = "test@gmail.com"
+
+// delete person.age
+
+// console.log(person)
+// console.log(person["age"])
+console.log(person.getInfo())

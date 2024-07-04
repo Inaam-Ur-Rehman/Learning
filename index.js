@@ -1,16 +1,43 @@
-// print numbers from 1 to 20
+// let fruits = ["oranges","apple", "mango", "kivy"];
+// let fruits2 = ["banana"];
 
-// initial value
-// end value (condition)
-// condition
+// console.log(fruits)
+// console.log(fruits[2])
 
-// for(let i = 1; i <= 20; i++) {
-//     console.log(i)
+// console.log(fruits.length)
+// i<fruits.length i<4
+
+// for (let i = 0; i<fruits.length; i++){
+//     console.log(fruits[i])
 // }
+// fruits[i]
+// fruits.forEach(i=> {
+//     console.log(i)
+// })
 
-let i = 1;
+// fruits.map(i => {
+//     console.log(i)
+// })
 
-while(i<=20){
-    console.log(i);
-    i++;
-}
+// console.log(fruits)
+
+// let final = fruits.join(",")
+// console.log(final)
+// console.log(fruits.concat(fruits2))
+
+// let fruits = ["oranges","apple", "mango", "kivy"];
+// let fruits2 = ["banana"];
+
+// console.log(fruits.slice(0,3))
+
+
+let fruits = ["oranges","apple", "mango", "kivy"];
+// let fruits2 = ["banana"];
+// delete fruits[0]; 
+// Alternative
+// fruits.shift()
+// fruits.push("banana")
+
+console.log(fruits)
+
+

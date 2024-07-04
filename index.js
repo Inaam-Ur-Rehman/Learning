@@ -1,26 +1,26 @@
-function caluculation(num1, num2, op){
-    if(op == "+") {
-        return num1 + num2
-    }
-    else if(op == "-"){
-        return num1 - num2
-    }
-    else if(op == "*"){
-        return num1 * num2
-    }
-    else if(op == "/"){
-        return num1 / num2
-    }
-    else if(op == "%"){
-        return num1 % num2
+function btnClick(){
+    let body = document.querySelector("body");
+    let btn = document.querySelector("button");
+    let isDark = body.classList.contains("dark")
+    if(isDark){
+        body.classList.remove("dark")
+        btn.innerText = "Toggle Dark Theme"
     }
     else{
-        return "Enter valid operation"
+        body.classList.add("dark")
+        btn.innerText = "Toggle Light Theme"
     }
-}
+  }
 
-var sum = caluculation(5, 7, "+");
-var min = caluculation(5, 7, "-");
-var mul = caluculation(5, 7, "*");
-var div = caluculation(5, 7, "/");
-var rem = caluculation(7, 5, "%");
+document.addEventListener("DOMContentLoaded", function () {
+  
+  let btn = document.querySelector("button");
+  btn.addEventListener("click", btnClick)
+});
+
+
+// let btn = document.querySelector("button");
+//   console.log(btn)
+//   btn.addEventListener("dblclick", function () {
+//     alert("Btn Clicked");
+//  });

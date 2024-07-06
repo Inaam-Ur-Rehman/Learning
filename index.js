@@ -1,26 +1,20 @@
-function btnClick(){
-    let body = document.querySelector("body");
-    let btn = document.querySelector("button");
-    let isDark = body.classList.contains("dark")
-    if(isDark){
-        body.classList.remove("dark")
-        btn.innerText = "Toggle Dark Theme"
-    }
-    else{
-        body.classList.add("dark")
-        btn.innerText = "Toggle Light Theme"
-    }
-  }
-
 document.addEventListener("DOMContentLoaded", function () {
-  
-  let btn = document.querySelector("button");
-  btn.addEventListener("click", btnClick)
+  let btn = document.getElementById("menu");
+  let header = document.getElementsByTagName("header")[0];
+  let nav = document.getElementsByTagName("nav")[0];
+
+  // show menu
+
+  btn.addEventListener("click", function () {
+    let isMobileHeader = header.classList.contains("mobile__header");
+    let isMobileNav = nav.classList.contains("mobile__menu");
+
+    if (isMobileHeader && isMobileNav) {
+      header.classList.remove("mobile__header");
+      nav.classList.remove("mobile__menu");
+    } else {
+      header.classList.add("mobile__header");
+      nav.classList.add("mobile__menu");
+    }
+  });
 });
-
-
-// let btn = document.querySelector("button");
-//   console.log(btn)
-//   btn.addEventListener("dblclick", function () {
-//     alert("Btn Clicked");
-//  });

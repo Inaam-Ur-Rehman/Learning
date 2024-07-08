@@ -1,4 +1,44 @@
-.dark {
-    background-color: black;
+.heading{
+    font-size: 40px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 2rem;
+}
+
+#btn__submit{
+    max-width: max-content;
+    margin: auto;
+    background-color: deepskyblue;
     color: white;
+    border: none;
+    padding: 0.3em 1em;
+    font-size: 20px;
+}
+
+.btn__container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn__container button{
+    background-color: cadetblue;
+    padding: 0.2em 1em;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+#result{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 1rem;
 }

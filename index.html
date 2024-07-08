@@ -9,9 +9,27 @@
   <script src="/index.js"></script>
 </head>
 <body class="">
-  <button>
-    Toggle Dark Mode
-  </button>
+  <h1 class="heading">Calculator</h1>
+  <form id="calculator__form">
+    <label for="num1">
+      First Number
+      <input type="number" name="num1" id="num1"/>
+    </label>
+    <label for="num1">
+      Second Number
+      <input type="number" name="num1" id="num2"/>
+    </label>
+    <div class="btn__container">
+      <button id="plus" type="button">+</button>
+      <button id="minus" type="button">-</button>
+      <button id="mul" type="button">x</button>
+      <button id="div" type="button">/</button>
+    </div>
+    <button type="submit" id="btn__submit">
+      Calculate
+    </button>
+  </form>
+  <p id="result"></p>
 </body>
 </html>
 

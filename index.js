@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let nav = document.getElementsByTagName("nav")[0];
 
   // show menu
-
   btn.addEventListener("click", function () {
     let isMobileHeader = header.classList.contains("mobile__header");
     let isMobileNav = nav.classList.contains("mobile__menu");
@@ -17,4 +16,5 @@ document.addEventListener("DOMContentLoaded", function () {
       nav.classList.add("mobile__menu");
     }
   });
+  
 });

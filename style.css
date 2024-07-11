@@ -42,3 +42,9 @@ form{
     font-weight: bold;
     margin-top: 1rem;
 }
+
+.btn__numbers{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+}
